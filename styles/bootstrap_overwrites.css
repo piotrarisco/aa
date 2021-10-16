@@ -1,0 +1,5 @@
+
+/* gets rid of a scrollbar at the bottom of the page */
+.row {
+    --bs-gutter-x: 0rem;
+}
