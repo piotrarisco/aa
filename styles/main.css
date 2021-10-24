@@ -17,9 +17,21 @@ a.contact_link_small:hover {
 }
 
 
+
+
+/* fonts sizes */
 .bigger_than_h1 {
     font-size: 60px;
 }
+.date_font {
+    font-size:14px;
+    color:rgb(116, 116, 116);
+}
+
+
+
+
+
 
 /* 3 cards about zoom meetings */
 .card_wrapper {
@@ -62,6 +74,21 @@ p {
     width:100%;
     position:absolute;
 }
+.video_responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+.video_responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
 
 
 
