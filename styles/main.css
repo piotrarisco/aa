@@ -2,6 +2,24 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+a {
+    color: rgb(29,114,150);
+}
+a:hover {
+    color: rgb(21, 81, 107);
+}
+a.contact_link_big:hover {
+    color: rgb(23, 72, 94);
+    background-color: rgb(23, 72, 94);
+}
+a.contact_link_small:hover {
+    color: rgb(29,114,150);
+}
+
+
+.bigger_than_h1 {
+    font-size: 60px;
+}
 
 /* 3 cards about zoom meetings */
 .card_wrapper {
@@ -13,12 +31,37 @@ p {
     font-size: 20px;
 }
 
+.contact_link_big {
+    color: rgb(46, 46, 46);
+    text-decoration: none;
+}
+
+.contact_link_small {
+    color: white;
+    text-decoration: none;
+}
+
+.blue_text {
+    color: rgb(23, 72, 94)
+}
 
 
 
 
 
-
+.map_responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 
 
 

@@ -3,3 +3,16 @@
 .row {
     --bs-gutter-x: 0rem;
 }
+
+.btn {
+    background-color: rgb(29,114,150);
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgb(25, 87, 114);
+    color:white;
+}
+
+
+
