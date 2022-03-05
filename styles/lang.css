@@ -1,0 +1,6 @@
+.en :lang(fr) {
+    display: none;
+  }
+  .fr :lang(en){
+    display: none;
+  }
