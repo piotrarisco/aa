@@ -84,15 +84,16 @@
     Idź na miting
 </div>
 
-
-<div id="checkbox-container"> <div> <label for="option1">Option 1</label> <input type="checkbox" id="option1"> </div> <div> <label for="option2">Option 2</label> <input type="checkbox" id
-
-
-
-
-
-
-</div> 
+<div id="checkbox-container"> 
+		<div>
+			<label for="option1">Option 1</label>
+			<input type="checkbox" id="option1"> 
+		</div> 
+		<div> 
+			<label for="option2">Option 2</label> 
+			<input type="checkbox" id="option2"> 
+		</div>
+</div>
 
 <script>
 var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {}; var $checkboxes = $("#checkbox-container :checkbox"); $checkboxes.on("change", function(){ $checkboxes.each(function(){ checkboxValues[this.id] = this.checked; }); localStorage.setItem("checkboxValues", JSON.stringify(checkboxValues)); });
