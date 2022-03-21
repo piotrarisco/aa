@@ -36,6 +36,10 @@
   <link rel="stylesheet" href="styles/bootstrap_overwrites.css">
   <link rel="stylesheet" href="styles/sugestie.css">
 
+ <!-- jquery -->
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+
 <meta name="Keywords" content="Leczenie Alkoholizmu, Alkohol Leczenie, Alkoholizm Pomoc, Alkoholizm Pomoc Kraków, Problem Z Alkoholem, Alkohol, AA Kraków, AA Krakow, Anonimowi Alkoholicy Kraków, Anonimowi Alkoholicy Krakow, Pomoc AA Kraków, Mitingi AA Kraków, mitingi AA Krakow, Pomoc AA Kraków, Uzależnienia Kraków, Pomoc Alkohol Krakow, Spotkania AA Kraków, Spotaknia AA Krakow, Intergrupa Małopolska, Intergrupa Malopolska, Alkohol pomoc, uzależnienia pomoc krakow" />
 
 </head>
@@ -81,11 +85,20 @@
 </div>
 
 
+<div id="checkbox-container"> <div> <label for="option1">Option 1</label> <input type="checkbox" id="option1"> </div> <div> <label for="option2">Option 2</label> <input type="checkbox" id
+
+
+
 
 
 
 </div> 
 
+<script>
+var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {}; var $checkboxes = $("#checkbox-container :checkbox"); $checkboxes.on("change", function(){ $checkboxes.each(function(){ checkboxValues[this.id] = this.checked; }); localStorage.setItem("checkboxValues", JSON.stringify(checkboxValues)); });
+$.each(checkboxValues, function(key, value) { $("#" + key).prop('checked', value); });
+
+</script>
 
 </body>
 
