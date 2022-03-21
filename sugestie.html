@@ -46,9 +46,9 @@
 <body>
 
     
-<div class="row">
+<div class="row" id="checkbox-container">
 <div clas="col-12 text-center">    
-    <input type="checkbox" class="big-checkbox">
+    <input type="checkbox" class="big-checkbox" id="checkbox1">
     <a>Poproś Boga, aby pokierował Twoim myśleniem</a>
 </div>
 <div clas="col-12 text-center">    
@@ -84,6 +84,7 @@
     Idź na miting
 </div>
 
+  <!--
 <div id="checkbox-container"> 
 		<div>
 			<label for="option1">Option 1</label>
@@ -94,7 +95,7 @@
 			<input type="checkbox" id="option2"> 
 		</div>
 </div>
-
+-->
 <script>
 var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {}; var $checkboxes = $("#checkbox-container :checkbox"); $checkboxes.on("change", function(){ $checkboxes.each(function(){ checkboxValues[this.id] = this.checked; }); localStorage.setItem("checkboxValues", JSON.stringify(checkboxValues)); });
 $.each(checkboxValues, function(key, value) { $("#" + key).prop('checked', value); });
