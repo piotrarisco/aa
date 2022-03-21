@@ -52,52 +52,44 @@
     <a>Poproś Boga, aby pokierował Twoim myśleniem</a>
 </div>
 <div clas="col-12 text-center">    
-    <input type="checkbox" class="big-checkbox">
+    <input type="checkbox" class="big-checkbox" id="checkbox2">
     Pościel łóżko 
 </div>
 <div clas="col-12 text-center">    
-    <input type="checkbox" class="big-checkbox">
+    <input type="checkbox" class="big-checkbox" id="checkbox3">
     Uklęknij i módl się
 </div>
 <div clas="col-12 text-center">    
-    <input type="checkbox" class="big-checkbox">
+    <input type="checkbox" class="big-checkbox" id="checkbox4">
     <a href="rano.html">Przeczytaj str. 87 - 89 - na dzień</a>
 </div>
 <div clas="col-12 text-center">    
-    <input type="checkbox" class="big-checkbox">
+    <input type="checkbox" class="big-checkbox" id="checkbox5">
     Zadzwoń do sponsora
 </div>
 <div clas="col-12 text-center">    
-    <input type="checkbox" class="big-checkbox">
+    <input type="checkbox" class="big-checkbox" id="checkbox6">
     Zadzwoń do innej AA
 </div>
 <div clas="col-12 text-center">    
-    <input type="checkbox" class="big-checkbox">
+    <input type="checkbox" class="big-checkbox" id="checkbox7">
     <a href="wieczorem.html">Przeczytaj str. 86 - 87 - na noc</a>
 </div>
 <div clas="col-12 text-center">    
-    <input type="checkbox" class="big-checkbox">
+    <input type="checkbox" class="big-checkbox" id="checkbox8">
     Wieczorem znajdź 10 rzeczy za które możesz byc wdzięczny
 </div>
 <div clas="col-12 text-center">    
-    <input type="checkbox" class="big-checkbox">
+    <input type="checkbox" class="big-checkbox" id="checkbox9">
     Idź na miting
 </div>
 
-  <!--
-<div id="checkbox-container"> 
-		<div>
-			<label for="option1">Option 1</label>
-			<input type="checkbox" id="option1"> 
-		</div> 
-		<div> 
-			<label for="option2">Option 2</label> 
-			<input type="checkbox" id="option2"> 
-		</div>
-</div>
--->
+
 <script>
+
+
 var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {}; var $checkboxes = $("#checkbox-container :checkbox"); $checkboxes.on("change", function(){ $checkboxes.each(function(){ checkboxValues[this.id] = this.checked; }); localStorage.setItem("checkboxValues", JSON.stringify(checkboxValues)); });
+ 
 $.each(checkboxValues, function(key, value) { $("#" + key).prop('checked', value); });
 
 </script>
