@@ -41,6 +41,7 @@
   <link rel="stylesheet" href="styles/bootstrap_overwrites.css">
 
   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
   
 
@@ -49,7 +50,23 @@
 
 </head>
 <body>
-
+  <div id="flierModal" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+       
+         <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+              
+        </div> 
+        <img src="imgs/flier.jpg"/>    
+        <div class="modal-footer mb-3">
+        </div> 
+      </div>
+    </div>
+  </div>
 
 
   
@@ -299,6 +316,12 @@ Anonimowych Alkoholików Służby Światowe. Istnieje wyłącznie dzięki Grupie
 Szósty Zmysł jako część pracy Dwunastego Kroku, która wychodzi z inicjatywą 
 pomocy alkoholikom, którzy nadal cierpią. 
 Oficjalną stronę AA w Polsce znajdziecie tu: <a href="http://www.aa24.pl/">Anonimowi Alkoholicy Polska</a>
+<br><br>  
+  <div>
+    <a href="https://www.facebook.com/groups/1838914506308925">
+      <img src="imgs/fb_icon.png" style="height:50px">
+    </a>
+  </div>
 </div>
 
 
@@ -306,6 +329,10 @@ Oficjalną stronę AA w Polsce znajdziecie tu: <a href="http://www.aa24.pl/">Ano
 
 </body>
 
-
+<script>
+  $(document).ready(function(){
+   $("#flierModal").modal('show');
+  });
+</script>
 
 </html>
